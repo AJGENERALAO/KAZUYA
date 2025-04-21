@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Generalao | Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+            closeMenu();
+        }
+        function toggleMenu() {
+            document.getElementById("sideMenu").classList.toggle("open");
+        }
+        function closeMenu() {
+            document.getElementById("sideMenu").classList.remove("open");
+        }
+    </script>
+    
+</head>
+<body onload="showSection('home')">
+    <header class="header">
+        <div class="logo"><h2>AJ GENERALAO</h2></div>
+        
+
+        <nav class="desktop-menu">
+            <a href="#" onclick="showSection('home')">HOME</a>
+            <a href="#" onclick="showSection('about')">ABOUT</a>
+            <a href="#" onclick="showSection('record')">RECORD</a>
+            <a href="#" onclick="showSection('boxing')">BOXING</a>
+            <a href="#" onclick="showSection('trainingvideo')">VIDEO</a>
+            <a href="#" onclick="showSection('npteam')">NP TEAM</a>
+            <a href="#" onclick="showSection('bike')">BIKE</a>
+            <a href="#" onclick="showSection('crunchyroll')">CRUNCHYROLL</a></li>
+            <a href="#" onclick="showSection('contact')">CONTACT</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <nav id="sideMenu" class="side-menu">
+        <span class="close-menu" onclick="closeMenu()">&times;</span>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">HOME</a></li>
+            <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
+            <li><a href="#" onclick="showSection('record')">RECORD</a></li>
+            <li><a href="#" onclick="showSection('boxing')">BOXING</a></li>
+            <li><a href="#" onclick="showSection('trainingvideo')">VIDEO</a></li>
+            <li><a href="#" onclick="showSection('photos')">PHOTOS</a></li>       
+            <li><a href="#" onclick="showSection('bike')">BIKE</a></li>
+            <li><a href="#" onclick="showSection('npteam')">NP TEAM</a></li>
+            <li><a href="#" onclick="showSection('crunchyroll')">Crunchyroll</a></li>
+            <li><a href="#" onclick="showSection('contact')">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section id="home" style="display:none;">
+        <h6></h6>
+    </section>
+
+    <section id="about" style="display:none;">
+        <h4>About AJ Generalao</h4>
+        <p>🥊🚵</p>
+    </section>
+
+
+    <section id="record" style="display:none;">
+        <h1>FIGHT RECORD</h1>
+        <p>1 WINS 0 KNOCKOUTS 0 LOSS</p>
+    </section>
+
+
+    <section id="boxing" style="display:none;">
+        <h2>BOXING EVENT</h2>
+        <h5></h5>
+        <iframe width="380" height="220" 
+    src="https://www.youtube.com/embed/SRYyhURD4D0"
+    title="TRANING SPARRING PART 1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</section>
+
+
+    <section id="npteam" style="display:none;">
+        <h2>NP TEAM</h2>
+        <h5><image src="PICTURE/box5.jpg" alt="">
+            <img src="PICTURE/box2.jpg" alt="">
+            <img src="PICTURE/box1.jpg" alt="">
+            <img src="PICTURE/box4.jpg" alt="">
+            <img src="PICTURE/box3.jpg" alt="">
+        </h5>
+    </section>
+
+    <section id="trainingvideo" style="display:none;">
+        <h4>TRAINING VIDEO</h4>
+        <h5>SPARRING/TRAINING</h5>
+        <iframe src=""
+    title="TRANING SPARRING PART 1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+    </section>
+
+        <section id="bike" style="display:none;">
+            <h4>AJ Generalao</h3>
+            <h5>MOUNTAIN BIKE🚀...</h5>
+            <div class="image-container">
+            <image src="PICTURE/photo_2025-02-04_18-28-27 (2).jpg" alt="BIKE">
+            <image src="PICTURE/photo_2025-02-04_18-28-27.jpg" alt="BIKE">
+            </div>
+        </section>
+
+        <section id="contact" style="display:none;">
+            <h4>Contact</h4>
+            <h5>Follow on social media:</h5>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="https://t.me/Hyper2135827"><i class="fab fa-telegram"></i> Telegram</a></li>
+            </ul>
+        </section>
+
+        <section id="photos" style="display:none;">
+            <h1>PHOTOS</h1>
+            <h4>Photos coming soon...</h4>
+        </section>
+
+        <section id="crunchyroll" style="display:none;">
+            <h1>free crunchyroll account</h1>
+            <img src="backround-image/crunchyroll.avif" alt="">
+            <h4>ACCOUNT</h4>
+            <hr></hr>
+            <p>EMAIL = gh0stkkjjjj@gmail.com | PASSWORD = Joao_8090</p>
+            <p>EMAIL = gomes5370@hotmail.com | PASSWORD = Ismaelbrito32!</p>
+            <p>EMAIL = victormsp_2404@hotmail.com | PASSWORD = victorm1009</p>
+            <hr></hr>
+            <h5></h5>
+            <h3>TESTED WORKING</h3>
+            <img src="screnshot-image-proof/crunchyroll scrennshot.png" alt="scrennshot">
+        </section>
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 AJ Generalao. All rights reserved.</p>
+    
+        <ul>
+            <li>
+                <a href="#"><img src="icon/facebook.png" alt="Facebook"> Facebook</a>
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@wolfvideo2425"><img src="icon/youtube.png" alt="YouTube"> YouTube</a>
+            </li>
+            <li>
+                <a href="https://t.me/Hyper2135827">
+                    <img src="icon/Telegram.png" alt="Telegram"> Telegram
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
