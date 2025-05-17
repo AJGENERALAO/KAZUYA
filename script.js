@@ -49,6 +49,6 @@ function copyText() {
     text.select();
     text.setSelectionRange(0, 99999); // For mobile
     navigator.clipboard.writeText(text.value)
-      .then(() => alert("Text copied!"))
-      .catch(err => alert("Failed to copy: " + err));
+      .then(() => alert("Text copied!✅"))
+      .catch(err => alert("Failed to copy❌: " + err));
   }
