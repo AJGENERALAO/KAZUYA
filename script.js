@@ -34,3 +34,21 @@ window.onload = function() {
     showSection('home');
     updateClock();
 }
+
+
+
+
+
+
+
+
+
+
+function copyText() {
+    const text = document.getElementById("myText");
+    text.select();
+    text.setSelectionRange(0, 99999); // For mobile
+    navigator.clipboard.writeText(text.value)
+      .then(() => alert("Text copied!"))
+      .catch(err => alert("Failed to copy: " + err));
+  }
